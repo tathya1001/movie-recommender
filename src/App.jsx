@@ -4,7 +4,7 @@ function App() {
   const [movie, setMovie] = useState('');
   const [responseContent, setResponseContent] = useState(null);
   const [posters, setPosters] = useState([]);
-  // console.log(import.meta.env.VITE_TMDB_API_KEY);
+  console.log(import.meta.env.VITE_TMDB_API_KEY);
 
   const tmdbApiKey = import.meta.env.VITE_TMDB_API_KEY;
 
@@ -19,7 +19,7 @@ function App() {
         console.log("Response:", JSON.stringify(data));
 
         const posterPromises = data.recommendations.map(rec =>
-          fetch(`https://api.themoviedb.org/3/movie/${rec.movie_id}?api_key=18801745663fe6b9442bb058ce026e76`)
+          fetch(`https://api.themoviedb.org/3/movie/${rec.movie_id}?api_key=${tmdbApiKey}`)
             .then(response => response.json())
         );
 
