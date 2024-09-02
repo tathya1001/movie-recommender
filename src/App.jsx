@@ -4,6 +4,7 @@ function App() {
   const [movie, setMovie] = useState('');
   const [responseContent, setResponseContent] = useState(null);
   const [posters, setPosters] = useState([]);
+  // console.log(import.meta.env.VITE_TMDB_API_KEY);
 
   const tmdbApiKey = import.meta.env.VITE_TMDB_API_KEY;
 
