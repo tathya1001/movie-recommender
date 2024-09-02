@@ -19,7 +19,7 @@ function App() {
         console.log("Response:", JSON.stringify(data));
 
         const posterPromises = data.recommendations.map(rec =>
-          fetch(`https://api.themoviedb.org/3/movie/${rec.movie_id}?api_key=${tmdbApiKey}`)
+          fetch(`https://api.themoviedb.org/3/movie/${rec.movie_id}?api_key=18801745663fe6b9442bb058ce026e76`)
             .then(response => response.json())
         );
 
