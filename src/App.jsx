@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="min-h-screen p-8 bg-gray-900 flex items-center justify-center font-custom">
       <div className="bg-gray-900 rounded-lg shadow-lg p-8 max-w-3xl w-full">
-        <h1 className="text-6xl font-semibold text-center text-white mb-6">WatchThisNext</h1>
+        <h1 className="text-3xl md:text-6xl sm:text-4xl font-semibold text-center text-white mb-6">WatchThisNext</h1>
         <form onSubmit={handleSubmit} className="flex items-center max-h-10">
 
           <input
