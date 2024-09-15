@@ -36,10 +36,10 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen p-8 bg-gray-900 flex items-center justify-center font-custom">
+    <div className="min-h-svh p-8 bg-gray-900 flex items-center justify-center font-custom">
       <div className="bg-gray-900 rounded-lg shadow-lg p-8 max-w-3xl w-full">
         <h1 className="text-3xl md:text-6xl sm:text-4xl font-semibold text-center text-white mb-6">WatchThisNext</h1>
-        <form onSubmit={handleSubmit} className="flex items-center max-h-10">
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 items-center">
 
           <input
             type="text"
@@ -51,7 +51,7 @@ function App() {
           />
           <button
             type="submit"
-            className="ml-2 text-lg bg-yellow-500 text-yellow-900 font-bold py-2 px-4 rounded-lg hover:opacity-50 transition duration-200"
+            className="text-lg bg-yellow-500 w-full sm:w-52 text-yellow-900 font-bold py-2 px-4 rounded-lg hover:opacity-50 transition duration-200"
           >
             Recommend
           </button>
